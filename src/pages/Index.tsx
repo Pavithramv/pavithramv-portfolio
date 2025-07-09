@@ -1,12 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect, useState } from 'react';
+import HeroSection from '../components/HeroSection';
+import AboutSection from '../components/AboutSection';
+import SkillsSection from '../components/SkillsSection';
+import ProjectsSection from '../components/ProjectsSection';
+import ExperienceSection from '../components/ExperienceSection';
+import ContactSection from '../components/ContactSection';
+import Navigation from '../components/Navigation';
+import LoadingScreen from '../components/LoadingScreen';
 
 const Index = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <LoadingScreen />;
+  }
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-purple-950 via-purple-900 to-indigo-950 text-white overflow-x-hidden">
+      <Navigation />
+      <HeroSection />
+      <AboutSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ExperienceSection />
+      <ContactSection />
     </div>
   );
 };
