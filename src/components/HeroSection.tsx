@@ -99,7 +99,7 @@ const HeroSection = () => {
 
         <div className="flex justify-center space-x-6 mb-12">
           <a 
-            href="https://github.com/pavithra"
+            href="https://github.com/Pavithramv"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 bg-purple-800/50 rounded-full hover:bg-purple-700 transform hover:scale-110 transition-all duration-300 shadow-lg shadow-purple-500/20"
@@ -107,7 +107,7 @@ const HeroSection = () => {
             <Github size={24} />
           </a>
           <a 
-            href="#"
+            href="https://www.linkedin.com/in/pavithra-mv-086250250/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 bg-purple-800/50 rounded-full hover:bg-purple-700 transform hover:scale-110 transition-all duration-300 shadow-lg shadow-purple-500/20"

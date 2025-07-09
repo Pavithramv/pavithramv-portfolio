@@ -12,42 +12,42 @@ const ProjectsSection = () => {
       image: '/lovable-uploads/b251a1ce-ad60-465b-8174-aa5dc53f5645.png'
     },
     {
-      title: 'Weather Analysis & Aeroplane Game',
-      description: 'Built a weather data processing tool with UI and designed a 2D obstacle-avoidance game with interactive gameplay mechanics.',
-      technologies: ['Python', 'UI/UX', 'Game Development', 'Data Processing'],
+      title: 'Weather Analysis',
+      description: 'Built a comprehensive weather data processing tool with an intuitive UI for analyzing weather patterns and providing detailed forecasts.',
+      technologies: ['Python', 'UI/UX', 'Data Processing', 'Weather API'],
+      github: 'https://github.com/Pavithramv/Weather-project',
+      demo: 'https://weather-project-rouge-alpha.vercel.app/',
+      image: '/lovable-uploads/b251a1ce-ad60-465b-8174-aa5dc53f5645.png'
+    },
+    {
+      title: 'Spiogen – 3D LiDAR Data Rendering & Classification Tool',
+      description: 'Developed a C++ application to render and process 3D LiDAR data using OpenGL. The system includes manual and automated classification of features such as powerlines and terrain points. Built for high-performance spatial analysis with real-time visualization capabilities.',
+      technologies: ['C++', 'GLSL', 'OpenGL', 'Qt Creator', 'GIS'],
       github: '#',
       demo: '#',
       image: '/lovable-uploads/b251a1ce-ad60-465b-8174-aa5dc53f5645.png'
     },
     {
-      title: 'Data Analysis Dashboard',
-      description: 'Performed exploratory data analysis (EDA) on large datasets using Python and SQL, identifying key patterns and trends to enhance model accuracy.',
-      technologies: ['Python', 'SQL', 'Pandas', 'Data Visualization'],
-      github: '#',
+      title: 'Agriculture Data Analysis and Yield Prediction',
+      description: 'Analyzed agricultural datasets to identify patterns in crop yield based on factors like soil type, rainfall, and fertilizer usage. Built a machine learning model to predict optimal crop production.',
+      technologies: ['Python', 'Pandas', 'Scikit-learn', 'Matplotlib', 'Jupyter Notebook'],
+      github: 'https://github.com/Pavithramv/Agriculture',
       demo: '#',
       image: '/lovable-uploads/b251a1ce-ad60-465b-8174-aa5dc53f5645.png'
     },
     {
-      title: 'Spatial Data Analysis Tool',
-      description: 'Designed and implemented optimized algorithms for advanced data transformations and spatial computations for complex datasets.',
-      technologies: ['Python', 'Spatial Analysis', 'Algorithms', 'Data Processing'],
-      github: '#',
+      title: 'Flood Prediction and Risk Analysis',
+      description: 'Processed weather and geographical data to build a flood prediction model using historical rainfall and water level data, aiding in early warning systems.',
+      technologies: ['Python', 'NumPy', 'Pandas', 'Random Forest', 'Matplotlib'],
+      github: 'https://github.com/Pavithramv/Flood',
       demo: '#',
       image: '/lovable-uploads/b251a1ce-ad60-465b-8174-aa5dc53f5645.png'
     },
     {
-      title: '3D Spatial Computing Platform',
-      description: 'Worked on projects involving 3D spatial data analysis and geometric computations, ensuring scalability and accuracy in deliverables.',
-      technologies: ['3D Computing', 'Geometric Analysis', 'Python', 'Algorithms'],
-      github: '#',
-      demo: '#',
-      image: '/lovable-uploads/b251a1ce-ad60-465b-8174-aa5dc53f5645.png'
-    },
-    {
-      title: 'Machine Learning Model Pipeline',
-      description: 'Built comprehensive ML pipeline for data preprocessing, model training, and deployment with focus on system reliability.',
-      technologies: ['Machine Learning', 'Python', 'Model Deployment', 'Data Pipeline'],
-      github: '#',
+      title: 'Kannada Hate Speech Detection',
+      description: 'Built a natural language processing (NLP) model to detect hate speech in Kannada text using labeled datasets and feature extraction techniques.',
+      technologies: ['Python', 'NLTK', 'Scikit-learn', 'TF-IDF', 'NLP'],
+      github: 'https://github.com/Pavithramv/Hate-Speech-in-Kannada',
       demo: '#',
       image: '/lovable-uploads/b251a1ce-ad60-465b-8174-aa5dc53f5645.png'
     }
@@ -98,18 +98,24 @@ const ProjectsSection = () => {
                 <div className="flex space-x-4">
                   <a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center space-x-2 text-purple-300 hover:text-white transition-colors duration-300 group/link"
                   >
                     <Github size={18} className="group-hover/link:scale-110 transition-transform duration-300" />
                     <span className="text-sm">Code</span>
                   </a>
-                  <a
-                    href={project.demo}
-                    className="flex items-center space-x-2 text-purple-300 hover:text-white transition-colors duration-300 group/link"
-                  >
-                    <ExternalLink size={18} className="group-hover/link:scale-110 transition-transform duration-300" />
-                    <span className="text-sm">Demo</span>
-                  </a>
+                  {project.demo !== '#' && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 text-purple-300 hover:text-white transition-colors duration-300 group/link"
+                    >
+                      <ExternalLink size={18} className="group-hover/link:scale-110 transition-transform duration-300" />
+                      <span className="text-sm">Demo</span>
+                    </a>
+                  )}
                 </div>
               </div>
 

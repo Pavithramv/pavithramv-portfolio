@@ -6,19 +6,19 @@ const SkillsSection = () => {
     {
       icon: Code,
       title: 'Programming Languages',
-      skills: ['Python', 'Java', 'C++', 'SQL', 'JavaScript'],
+      skills: ['Python', 'Java', 'C++', 'C', 'SQL', 'JavaScript'],
       color: 'from-purple-500 to-pink-500'
     },
     {
       icon: Globe,
       title: 'Web Development',
-      skills: ['HTML', 'CSS', 'React.js', 'Node.js', 'Express.js'],
+      skills: ['HTML', 'CSS', 'React.js'],
       color: 'from-blue-500 to-purple-500'
     },
     {
       icon: Database,
       title: 'Database & Analytics',
-      skills: ['MongoDB', 'MySQL', 'Data Analysis', 'Power BI', 'Pandas'],
+      skills: ['MySQL', 'Data Analysis', 'Power BI', 'Pandas'],
       color: 'from-green-500 to-blue-500'
     },
     {
